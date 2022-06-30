@@ -52,7 +52,7 @@ namespace HR
             ob.Show();
             this.Hide();
             MessageBox.Show("Hello");
-         
+            MessageBox.Show("hello world");
         }
     }
 }
