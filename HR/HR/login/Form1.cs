@@ -52,6 +52,7 @@ namespace HR
             ob.Show();
             this.Hide();
             MessageBox.Show("change 1");
+            MessageBox.Show("change 2");
         }
     }
 }
