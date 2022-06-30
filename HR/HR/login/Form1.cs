@@ -51,6 +51,7 @@ namespace HR
             homeMain.page ob = new homeMain.page();
             ob.Show();
             this.Hide();
+            MessageBox.Show("Hello");
          
         }
     }
