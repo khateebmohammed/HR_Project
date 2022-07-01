@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txt_User_ID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_User_PWD = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,13 +46,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3.SuspendLayout();
+            this.txt_User_ID = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -73,46 +73,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(191, 14);
+            this.label3.Location = new System.Drawing.Point(324, 223);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "اسم المستخدم";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.txt_User_ID);
-            this.panel3.Location = new System.Drawing.Point(72, 213);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(268, 44);
-            this.panel3.TabIndex = 2;
-            // 
-            // txt_User_ID
-            // 
-            this.txt_User_ID.BackColor = System.Drawing.Color.White;
-            this.txt_User_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_User_ID.Location = new System.Drawing.Point(17, 10);
-            this.txt_User_ID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_User_ID.Multiline = true;
-            this.txt_User_ID.Name = "txt_User_ID";
-            this.txt_User_ID.Size = new System.Drawing.Size(231, 24);
-            this.txt_User_ID.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(196, 14);
+            this.label4.Location = new System.Drawing.Point(324, 295);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 17);
+            this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "كلمة المرور";
             // 
@@ -120,11 +98,11 @@
             // 
             this.txt_User_PWD.BackColor = System.Drawing.Color.White;
             this.txt_User_PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_User_PWD.Location = new System.Drawing.Point(21, 10);
-            this.txt_User_PWD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_User_PWD.Location = new System.Drawing.Point(4, 5);
+            this.txt_User_PWD.Margin = new System.Windows.Forms.Padding(2);
             this.txt_User_PWD.Multiline = true;
             this.txt_User_PWD.Name = "txt_User_PWD";
-            this.txt_User_PWD.Size = new System.Drawing.Size(231, 24);
+            this.txt_User_PWD.Size = new System.Drawing.Size(215, 35);
             this.txt_User_PWD.TabIndex = 5;
             // 
             // pictureBox2
@@ -132,7 +110,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(191, 488);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(22, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -162,6 +140,7 @@
             this.label7.Size = new System.Drawing.Size(85, 18);
             this.label7.TabIndex = 7;
             this.label7.Text = "انشاءحساب جديد";
+            this.label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // label5
             // 
@@ -187,7 +166,7 @@
             this.button1.ForeColor = System.Drawing.Color.MintCream;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(106, 429);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 45);
             this.button1.TabIndex = 4;
@@ -198,12 +177,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.txt_User_PWD);
             this.panel4.Location = new System.Drawing.Point(72, 285);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(268, 44);
+            this.panel4.Size = new System.Drawing.Size(223, 44);
             this.panel4.TabIndex = 3;
             // 
             // label2
@@ -222,6 +200,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Honeydew;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
@@ -233,7 +213,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(413, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(412, 569);
             this.panel2.TabIndex = 3;
@@ -242,7 +222,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(76, 183);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(262, 295);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -278,7 +258,7 @@
             this.panel5.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel5.Controls.Add(this.label9);
             this.panel5.Location = new System.Drawing.Point(317, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(48, 41);
             this.panel5.TabIndex = 2;
@@ -291,10 +271,31 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(412, 569);
             this.panel1.TabIndex = 2;
+            // 
+            // txt_User_ID
+            // 
+            this.txt_User_ID.BackColor = System.Drawing.Color.White;
+            this.txt_User_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_User_ID.Location = new System.Drawing.Point(3, 5);
+            this.txt_User_ID.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_User_ID.Multiline = true;
+            this.txt_User_ID.Name = "txt_User_ID";
+            this.txt_User_ID.Size = new System.Drawing.Size(216, 35);
+            this.txt_User_ID.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.txt_User_ID);
+            this.panel3.Location = new System.Drawing.Point(72, 213);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(223, 44);
+            this.panel3.TabIndex = 2;
             // 
             // Form1
             // 
@@ -304,7 +305,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Opacity = 0.99D;
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -312,8 +313,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -324,6 +323,8 @@
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -332,8 +333,6 @@
 
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txt_User_ID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_User_PWD;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -349,6 +348,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox txt_User_ID;
     }
 }
 

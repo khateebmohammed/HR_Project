@@ -70,5 +70,10 @@ namespace HR
             }
 
         }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
