@@ -57,6 +57,8 @@
     <Compile Include="attendance\attendPage.Designer.cs">
       <DependentUpon>attendPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Business_Layer\LOGIN_CLASS.cs" />
+    <Compile Include="Data_Access_Layer\DataAccessLayer.cs" />
     <Compile Include="imprest\imprestPage.cs">
       <SubType>Form</SubType>
     </Compile>
