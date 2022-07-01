@@ -14,6 +14,7 @@ namespace HR
 {
     public partial class Form1 : Form
     {
+        Business_Layer.LOGIN_CLASS Log_Class = new Business_Layer.LOGIN_CLASS();
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -48,13 +49,25 @@ namespace HR
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            homeMain.page ob = new homeMain.page();
-            ob.Show();
-            this.Hide();
-            MessageBox.Show("change 1");
-            MessageBox.Show("change 2");
-            MessageBox.Show("change 3");
-            MessageBox.Show("change 4");
+            DataTable Dt = Log_Class.LOGIN(txt_User_ID.Text, txt_User_PWD.Text);
+            try
+            {
+                if (Dt.Rows.Count > 0)
+                {
+                    MessageBox.Show("تم تسجيل دخولك بنجاح", "تأكيد تسجيل الدخول", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    homeMain.page ob = new homeMain.page();
+                    ob.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("أسم المستخدم أو كلمة المرور غير صحيحة أعد المحاولة!", "خطأ في تسجيل الدخول", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("حدث خطأ ما", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
     }
