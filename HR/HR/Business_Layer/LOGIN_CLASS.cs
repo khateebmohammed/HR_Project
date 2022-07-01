@@ -9,10 +9,11 @@ namespace HR.Business_Layer
 {
     class LOGIN_CLASS
     {
+        // We will create an object from the data access layer class
+        Data_Access_Layer.DataAccessLayer DAL = new Data_Access_Layer.DataAccessLayer();
         public DataTable LOGIN(string ID, string PWD)
         {
-            // We will create an object from the data access layer class
-            Data_Access_Layer.DataAccessLayer DAL = new Data_Access_Layer.DataAccessLayer();
+
             SqlParameter[] param = new SqlParameter[2];
 
             param[0] = new SqlParameter("@ID", SqlDbType.NVarChar, 50);
