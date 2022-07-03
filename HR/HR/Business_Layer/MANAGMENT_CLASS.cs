@@ -29,7 +29,7 @@ namespace HR.Business_Layer
             return Dt;
         }
 
-        // This is for delete a Customer
+        // This is for delete a management
         public void DELETE_Managment(int ID)
         {
             DAL.open();

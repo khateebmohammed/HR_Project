@@ -149,7 +149,7 @@ namespace HR.manage
             btn_Save.Enabled = true;
             btn_Edit.Enabled = false;
             btn_Delete.Enabled = false;
-            txt_Manag_ID.Text=Mana_CLS.Get_Last_Management_ID().Rows[0][0].ToString(); ;
+            txt_Manag_ID.Text=Mana_CLS.Get_Last_Management_ID().Rows[0][0].ToString();
             txt_Manag_Name.Clear();
             txt_Manag_Name.ReadOnly = false;
             txt_Manag_Name.Focus();
