@@ -16,7 +16,7 @@ namespace HR
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new manage.managePage());
+            Application.Run(new depts.deptPage());
         }
     }
 }
