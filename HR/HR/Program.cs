@@ -16,7 +16,7 @@ namespace HR
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new depts.deptPage());
+            Application.Run(new majors.majorsPage());
         }
     }
 }
